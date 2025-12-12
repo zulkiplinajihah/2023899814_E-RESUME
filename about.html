@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+
+<style>
+
+:root{
+  --rose:#B76E79;
+  --rose-light:#F9E3E7;
+  --rose-bg:#FFF0F4;
+  --sage-dark:#2F4A38;
+  --sage-mid:#3F6A52;
+  --card-bg:#FFFFFF;
+  --radius:15px;
+  --shadow:0 8px 22px rgba(0,0,0,0.08);
+  --font:'Poppins','Segoe UI',Arial,sans-serif;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--rose-bg);
+  font-family:var(--font);
+}
+
+.container{
+  padding:24px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:#FFFFFF;
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:25px;
+  border-left:6px solid var(--rose);
+}
+
+.h1{
+  font-size:28px;
+  font-weight:600;
+  color:var(--rose);         
+  margin-bottom:15px;
+}
+
+.card p{
+  color:var(--sage-dark);    
+  line-height:1.7;
+}
+
+.small{
+  font-weight:600;
+  margin-top:18px;
+  color:var(--sage-mid);
+}
+
+.fancy-divider {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancy-divider .line {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg,
+        rgba(47,74,56,0.0),
+        rgba(47,74,56,0.4),
+        rgba(47,74,56,0.0));
+  border-radius: 3px;
+}
+
+.fancy-divider .dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #3F6A52;                
+  transform: rotate(45deg);           
+  border-radius: 4px;
+  animation: moveDot 4s ease-in-out infinite;
+  box-shadow:
+    0 0 10px rgba(63,106,82,0.7),
+    0 0 18px rgba(63,106,82,0.5);
+}
+
+
+.fancy-divider .dot::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  right: 100%;                          
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  background: linear-gradient(90deg,
+        rgba(63,106,82,0.0),
+        rgba(63,106,82,0.25),
+        rgba(63,106,82,0.5));
+  filter: blur(6px);
+}
+
+
+@keyframes moveDot {
+  0%   { transform: translateX(-200px) rotate(45deg); }
+  50%  { transform: translateX(200px) rotate(45deg); }
+  100% { transform: translateX(-200px) rotate(45deg); }
+}
+
+
+.mix-card{
+  background:linear-gradient(135deg,#FFF5F7,#F9E3E7); /* Soft rose */
+  padding:30px;
+  border-radius:15px;
+  border-left:6px solid var(--rose);
+  box-shadow:var(--shadow);
+  margin-top:25px;
+}
+
+.mix-title{
+  font-size:26px;
+  font-weight:600;
+  color:var(--rose);
+  margin-bottom:25px;
+  border-bottom:2px solid rgba(183,110,121,0.25);
+  padding-bottom:8px;
+}
+
+.mix-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px 40px;
+}
+
+.modern-item{
+  padding:14px 18px;
+  background:rgba(183,110,121,0.05); 
+  border-left:4px solid var(--rose);
+  border-radius:12px;
+  transition:0.25s ease;
+  box-shadow:0 4px 10px rgba(0,0,0,0.04)
+}
+
+.modern-item:hover{
+  background:rgba(63,106,82,0.07);   
+  transform:translateX(4px);
+  box-shadow:0 6px 14px rgba(0,0,0,0.07);          
+}
+
+.modern-label{
+  font-size:13px;
+  font-weight:600;
+  color:var(--sage-mid);
+  letter-spacing:0.5px;
+  opacity:0.9;
+}
+
+.modern-value{
+  font-size:16px;
+  color:var(--sage-dark);
+  font-weight:600;
+  margin-top:3px;
+}
+
+.wrapper{
+  flex: 1;
+}
+
+.footer{
+  background:#934b57;
+  text-align:center;
+  font-size:14px;
+  color:#faf6f7;
+  margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card">
+    <h1 class="h1">ABOUT ME</h1>
+
+    <p>Hello! I am Najihah Binti Zulkipli, a dedicated Library and Information Science student at Universiti Teknologi MARA (UiTM) Kedah with a strong passion for knowledge organization, digital information management, and user-centered library services.</p>
+
+    <p>I enjoy exploring how information systems, data analytics, and modern library technologies can improve access to information and support community learning.</p>
+
+    <p class="small">Career Objectives:</p>
+    <ul>
+      <li>To pursue continuous professional growth in the field of library and information science through the development of advanced technical competencies.</li>
+      <li>To contribute effectively to the advancement of contemporary library practices, digital information management, and the broader information profession.</li>
+    </ul>
+</div>
+
+<div class="fancy-divider">
+  <div class="line"></div>
+  <div class="ornament" aria-hidden="true"></div>
+  <div class="dot"></div>
+</div>
+
+    <h2 class="mix-title">PERSONAL DETAILS</h2>   
+
+    <div class="mix-grid">
+
+      <div class="modern-item">
+        <span class="modern-label">Full Name </span>
+        <span class="modern-value">Najihah Binti Zulkipli</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Date of Birth </span>
+        <span class="modern-value">16 March 2003</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Place of Birth </span>
+        <span class="modern-value">Tasek Gelugor, Penang</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Gender </span>
+        <span class="modern-value">Female</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Nationality </span>
+        <span class="modern-value">Malaysian</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Religion </span>
+        <span class="modern-value">Islam</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Marital Status </span>
+        <span class="modern-value">Single</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Address </span>
+        <span class="modern-value">No. 21, Lot 1154 Tasek Gelugor, Seberang Perai Utara, Penang</span>
+      </div>
+
+      <div class="modern-item">
+        <span class="modern-label">Phone </span>
+        <span class="modern-value">013-2875447</span>
+      </div>
+
+    </div>
+  </div> 
+    
+
+  <div class="footer">
+    <p>&copy; 2025 Najihah Zulkipli. All rights reserved.</p>
+    <p>This website and its content are the intellectual property of Najihah Zulkipli. Information is for personal and academic purposes only.</p>
+  <p>Recommended Browser: Google Chrome, Mozilla Firefox, Microsoft Edge</p>
+  <p>Best Viewed Resolution: 1366 x 768 or higher</p>
+  <p>Last Updated: December 2025</p>
+
+  </div>
+
+</div>
+
+</body>
+</html>

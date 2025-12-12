@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --rose:#B76E79;
+  --rose-dark:#9e5d65;
+  --white-glass:rgba(255,255,255,0.35);
+  --radius:22px;
+  --shadow:0 10px 25px rgba(0,0,0,0.20);
+}
+
+
+html,body{
+  margin:0; 
+  padding:0;
+  font-family:'Poppins', sans-serif;
+  background:url('images/main-bg.png') center/cover no-repeat fixed;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.wrapper{
+  width:85%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:40px 20px;
+  gap:40px;
+}
+
+
+.left{
+  width:50%;
+  padding:20px 30px;
+}
+
+
+.typing{
+  font-family:"Playfair Display", serif;
+  font-size:55px;
+  font-weight:800;
+  color:var(--rose);
+  white-space:nowrap;
+  overflow:hidden;
+  border-right:4px solid var(--rose);
+  width:0;
+  animation:typing 3s steps(30) forwards, blink 0.7s infinite;
+}
+
+
+@keyframes typing{
+  to{ width:100%; }
+}
+@keyframes blink{
+  50%{ border-color:transparent; }
+}
+
+.left p{
+  font-size:20px;
+  color:#444;
+  margin-top:20px;
+  margin-bottom:35px;
+  line-height:1.6;
+}
+
+
+.btn{
+  display:inline-block;
+  padding:16px 36px;
+  background:linear-gradient(to right, var(--rose), var(--rose-dark));
+  color:white;
+  font-size:20px;
+  border-radius:var(--radius);
+  text-decoration:none;
+  margin-right:15px;
+  transition:0.35s;
+  box-shadow:var(--shadow);
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+  filter:brightness(1.15);
+}
+
+.btn-outline{
+  display:inline-block;
+  padding:16px 36px;
+  border-radius:var(--radius);
+  font-size:20px;
+  text-decoration:none;
+  border:2px solid var(--rose);
+  color:var(--rose);
+  background:white;
+  transition:0.35s;
+}
+.btn-outline:hover{
+  background:var(--rose);
+  color:white;
+  transform:translateY(-4px);
+}
+
+
+.right{
+  width:50%;
+  display:flex;
+  justify-content:center;
+}
+
+.video-wrapper{
+  background:var(--white-glass);
+  backdrop-filter:blur(10px);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow);
+  width:90%;
+}
+
+.video-box{
+  width:100%;
+  height:420px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:4px solid #c7d8c5;
+}
+
+.video-box iframe{
+  width:100%;
+  height:100%;
+}
+
+
+@media(max-width:900px){
+  .wrapper{
+    flex-direction:column;
+    text-align:center;
+  }
+  .left, .right{
+    width:100%;
+  }
+  .video-box{
+    height:260px;
+  }
+  .typing{
+    font-size:45px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  
+  <div class="left">
+    <h1 class="typing">Welcome<br>to My Digital Resume</h1>
+
+    <p>Click the button below to explore my journey, skills, and professional achievements.</p>
+
+    <a href="frame.html" class="btn">Enter My Resume</a>
+    <a href="NAJIHAHZULKIPLI-RESUME.pdf" class="btn-outline" download>Download My Resume</a>
+  </div>
+
+ 
+<div class="video-wrapper">
+  <div class="video-box">
+    <video controls style="width:100%; height:100%; object-fit:cover;">
+      <source src="intro.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

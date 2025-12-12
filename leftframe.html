@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sidebar</title>
+
+
+<style>
+
+
+:root{
+    --main-bg:#F8F5F7;
+    --accent:#C05A6C;
+    --accent-soft:#F5E3E8;
+    --card-bg:#FFFFFF;
+    --text-dark:#4A3F42;
+    --muted:#8E7A7F;
+    --radius:14px;
+    --shadow:0 8px 22px rgba(192,90,108,0.18);
+    --font-sans:'Poppins','Segoe UI',Arial,sans-serif;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    background:var(--main-bg);
+    font-family:var(--font-sans);
+    height:100%;
+    overflow:hidden;
+}
+
+
+.sidebar-card{
+    background:linear-gradient(145deg, #FDF7F9, #F2D4DD);
+    padding:18px 14px;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-sizing:border-box;
+    overflow:hidden; 
+}
+
+
+.profile-pic{
+    width:140px;
+    height:140px;
+    border-radius:14px;
+    object-fit:cover;
+    border:3px solid #EFD3DA;
+    box-shadow:0 6px 16px rgba(192,90,108,0.25);
+    margin-bottom:8px;
+}
+
+
+.name{
+    font-size:18px;
+    font-weight:600;
+    color:var(--accent);
+    margin:6px 0 3px 0;
+    text-align:center;
+}
+
+
+.student-id{
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:4px;
+    text-align:center;
+}
+
+.role{
+    font-size:13px;
+    color:var(--muted);
+    text-align:center;
+}
+
+
+.section-title{
+    margin:10px 0 4px 0;
+    font-size:14px;
+    color:var(--accent);
+    font-weight:600;
+    text-align:center;
+}
+
+
+.divider{
+    width:60%;
+    height:2px;
+    background:#E7C6CE;
+    margin:10px 0;
+    border-radius:20px;
+}
+
+
+.language-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    max-width:210px;
+    margin:3px 0;
+    font-size:13px;
+    color:var(--text-dark);
+}
+
+
+.language-name{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:500;
+}
+
+.language-row img{
+    width:18px;
+    height:18px;
+    border-radius:4px;
+    object-fit:cover;
+}
+
+
+.stars{
+    margin-left:auto;
+    font-size:14px;
+    color:#D4A017;
+}
+
+
+.motto-box{
+    background:#ffffff90;
+    padding:10px 12px;
+    border-radius:12px;
+    font-size:12px;
+    font-style:italic;
+    color:var(--accent);
+    text-align:center;
+    margin-top:10px;
+    box-shadow:0 5px 15px rgba(192,90,108,0.15);
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="sidebar-card">
+
+
+  <img src="images/profile.jpg" class="profile-pic" alt="My  Profile Photo">
+
+  <h3 class="name">Najihah Binti Zulkipli</h3>
+  <div class="student-id"><h4>2023899814</div>
+  <div class="role">Final Year Student of Library Management</h4></div>
+
+
+<div class="divider"></div>
+
+<div class="section-title">Languages Fluency</div>
+
+   <div class="language-row">
+       <span class="language-name">
+          <img src="images/malaysia.png" alt="">
+          Malay
+       </span>
+   <span class="stars">★★★★★</span>
+
+</div>
+
+
+    <div class="language-row">
+        <span class="language-name">
+           <img src="images/uk.png" alt="">
+           English
+        </span>
+     <span class="stars">★★★☆☆</span>
+</div>
+
+
+     <div class="language-row">
+         <span class="language-name">
+            <img src="images/saudia.png" alt="">
+            Arabic
+         </span>
+     <span class="stars">★★☆☆☆</span>
+</div>
+
+
+       <div class="language-row">
+           <span class="language-name">
+              <img src="images/german.png">
+              German
+           </span>
+       <span class="stars">★★☆☆☆</span>
+</div>
+
+
+<div class="section-title">Hobby</div>
+       <div class="language-row" style="justify-content:center;">
+       Reading
+</div>
+
+
+ <div class="section-title">Motto</div>
+ <div class="motto-box">"Strive for progress, not  perfection."</div>
+
+
+</div>
+</div>
+
+
+</body>
+</html>

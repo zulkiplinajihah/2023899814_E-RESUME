@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Top Menu</title>
+
+<style>
+
+:root{
+  --main-bg:#FFFDFE;
+  --accent:#B76E79;
+  --accent-2:#EFDDE0;
+  --card-bg:#FFFFFF;
+  --text-dark:#2C2C2C;
+  --muted:#7A6C6F;
+  --radius:14px;
+  --shadow:0 8px 20px rgba(0,0,0,0.05);
+  --font-sans: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--main-bg);
+  font-family:var(--font-sans);
+  height:100%
+}
+
+.topbar{
+  height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 40px;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(8px);
+  border-bottom:2px solid #f3e6e9;
+}
+
+.brand{
+  font-size:28px;
+  font-weight:600;
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+}
+
+.menu-box{
+  background:rgba(189,201,187);
+  padding:10px 14px;
+  border-radius:20px;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(6px);
+}
+
+.menu-btn img.icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  transition:200ms ease;
+}
+
+.menu-btn:hover img.icon{
+  transform:translateY(-3px);
+  box-shadow:0 6px 20px rgba(183,110,121,0.20);
+}
+
+.topbar{
+  height: clamp(55px, 10vw, 110px);
+  padding: 0 clamp(10px, 4vw, 40px);
+}
+
+.brand{
+  font-size: clamp(16px, 3vw, 28px);
+}
+
+.menu-box{
+  padding: clamp(4px, 1vw, 10px) clamp(6px, 2vw, 14px);
+  gap: clamp(6px, 2vw, 14px);
+  border-radius: clamp(10px, 3vw, 20px);
+}
+
+.menu-btn img.icon{
+  width: clamp(20px, 4vw, 42px);
+  height: clamp(20px, 4vw, 42px);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+
+    <div class="brand">E-RESUME</div>
+
+    <div class="menu-box">
+
+     <a class="menu-btn" href="index.html" target="_top">
+        <img class="icon" src="icons/home.svg" alt="Home" title="Home">
+      </a>
+
+      <a class="menu-btn" href="about.html" target="mainFrame">
+        <img class="icon" src="icons/about.svg" alt="About" title="About">
+      </a>
+
+      <a class="menu-btn" href="education.html" target="mainFrame">
+        <img class="icon" src="icons/education.svg" alt="Education" title="Education">
+      </a>
+
+      <a class="menu-btn" href="experience.html" target="mainFrame">
+        <img class="icon" src="icons/experience.svg" alt="Experience" title="Experience">
+      </a>
+
+      <a class="menu-btn" href="skills.html" target="mainFrame">
+        <img class="icon" src="icons/skills.svg" alt="Skills" title="Skills">
+      </a>
+
+      <a class="menu-btn" href="contact.html" target="mainFrame">
+        <img class="icon" src="icons/contact.svg" alt="Contact" title="Contact">
+      </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skills</title>
+
+<style>
+
+
+:root{
+  --main-bg:#FFFDFE;
+  --accent:#B76E79;
+  --accent-2:#EFDDE0;
+  --card-bg:#FFFFFF;
+  --text-dark:#2C2C2C;
+  --muted:#7A6C6F;
+  --radius:12px;
+  --shadow:0 8px 20px rgba(0,0,0,0.06);
+  --transition:200ms ease;
+  --font-sans:'Poppins','Segoe UI',Arial,sans-serif;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+.wrapper{
+  flex: 1;
+}
+
+.container{
+  padding:24px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:var(--card-bg);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:20px;
+}
+
+.h1{
+  font-size:28px;
+  font-weight:600;
+  color:var(--accent);
+}
+
+.skill{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+.bar{
+  flex:1;
+  height:12px;
+  background:var(--accent-2);
+  border-radius:10px;
+}
+
+.bar i{
+  height:100%;
+  display:block;
+  background:linear-gradient(90deg, var(--accent), #E7B7BE);
+  border-radius:10px;
+}
+
+.soft-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:20px;
+}
+
+.tag{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  border-radius:24px;
+  border:1px solid #E8C8D0;
+  background:#FFF7FA;
+  color:#B76E79;
+  font-size:15px;
+  font-weight:500;
+  box-shadow:0 4px 10px rgba(183,110,121,0.10);
+  transition:0.3s ease;
+  animation: floatSoft 3s ease-in-out infinite;
+}
+
+.tag:hover{
+  transform:scale(1.08) translateY(-4px);
+  background:#F3D9DF;
+  box-shadow:0 8px 18px rgba(183,110,121,0.20);
+}
+
+.tag-icon{
+  width:20px;
+  height:20px;
+}
+
+
+@keyframes floatSoft {
+  0% { transform:translateY(0); }
+  50% { transform:translateY(-4px); }
+  100% { transform:translateY(0); }
+}
+
+
+
+.footer{
+  background:#934b57;
+  text-align:center;
+  font-size:14px;
+  color:#faf6f7;
+  margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="container">
+
+   <div class="card">
+    <h1 class="h1">TECHNICAL SKILLS</h1>
+
+    <div class="skill">
+      <span>OPAC System</span>
+      <div class="bar"><i style="width:95%"></i></div>
+    </div>
+
+    <div class="skill">
+      <span>Information Literacy</span>
+      <div class="bar"><i style="width:90%"></i></div>
+    </div>
+
+    <div class="skill">
+      <span>Cataloguing & Classification</span>
+      <div class="bar"><i style="width:70%"></i></div>
+    </div>
+
+    <div class="skill">
+      <span>Data Analytics</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </div>
+
+<div class="skill">
+      <span>Microsoft Ofice</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </div>
+
+<div class="skill">
+      <span>Web Development</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </div>
+
+<h2 class="h1" style="font-size:22px; margin-top:30px;">SOFT SKILLS</h2>
+
+    <div class="soft-tags">
+
+      <div class="tag"><img src="icons/teamwork.svg" class="tag-icon"> Teamwork</div>
+      <div class="tag"><img src="icons/time.svg" class="tag-icon"> Time Management</div>
+      <div class="tag"><img src="icons/leader.svg" class="tag-icon"> Leadership</div>
+      <div class="tag"><img src="icons/communication.svg" class="tag-icon"> Effective Communication</div>
+      <div class="tag"><img src="icons/problem.svg" class="tag-icon"> Problem Solving</div>
+      <div class="tag"><img src="icons/adapt.svg" class="tag-icon"> Adaptability</div>
+      </div>
+    
+    </div>   
+
+  </div>
+ </div>
+  
+<div class="footer"> 
+
+    <p>&copy; 2025 Najihah Zulkipli. All rights reserved.</p>
+    <p>This website and its content are the intellectual property of Najihah Zulkipli. Information is for personal and academic purposes only.</p>
+  <p>Recommended Browser: Google Chrome, Mozilla Firefox, Microsoft Edge</p>
+  <p>Best Viewed Resolution: 1366 x 768 or higher</p>
+  <p>Last Updated: December 2025</p>
+</div>
+
+</body>
+</html>
